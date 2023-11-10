@@ -11,7 +11,7 @@ const url = 'mongodb+srv://Roshan:Roshan786@cluster0.eoiy197.mongodb.net/test?re
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://jwt-autthentication-nodejs-1whq.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true
 
