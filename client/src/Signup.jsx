@@ -10,7 +10,7 @@ function Signup() {
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('jwt-authentication-nodejs-api.vercel.app/register', {name, email, password})
+        axios.post('https://jwt-authentication-nodejs-api.vercel.app//register', {name, email, password})
         .then(res => {
             navigate('/login')
         }).catch(err => console.log(err))
